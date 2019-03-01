@@ -1,0 +1,53 @@
+
+<div ng-include="'tpl/header.html'"></div>
+
+<div style="margin-top:60px" class="container">
+    <!-- 搜索栏-->
+
+            <div class="form-group has-feedback" >
+                <input type="text" placeholder="search..." class="col-md-12 col-sm-12 col-xs-12 form-control"/>
+                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            </div>
+
+
+    <br/>
+
+    <!-- 菜单-->
+        <ul class="list-group" id="dish-list">
+            <li class="list-group-item" ng-click="jump('/detail')">
+                <div class="media ">
+                        <div class="media-left media-middle">
+                        <img src="img/p0281.jpg" />
+                    </div>
+                    <div class="media-body ">
+                        <h2>【<span>酸甜开胃虾</span>】</h2>
+                        <p>主食：明细发的发生大幅度是任务.....</p>
+                        <h3>￥:36.00</h3>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div class="media ">
+                        <div class="media-left media-middle">
+                        <img src="img/p0281.jpg" />
+                    </div>
+                    <div class="media-body ">
+                        <h2>【<span>酸甜开胃虾</span>】</h2>
+                        <p>主食：明细发的发生大幅度是任务.....</p>
+                        <h3>￥:36.00</h3>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    <!--尾部加载 -->
+        <button class=" btn btn-success btn-block">加载更多</button>
+        <div class="alert alert-danger">
+            <span class="glyphicon glyphicon-alert"></span>
+            已经没有了！
+        </div>
+
+</div>
+
+
+<div ng-include="'tpl/footer.html'"></div>

@@ -1,0 +1,30 @@
+body{
+    margin-bottom: 50px;
+}
+#footer {
+   text-align: center;
+}
+#footer span{
+    float:left;
+    padding-top:15px;
+    width: 33.2%;
+    height:48px;
+    display: inline-block;
+}
+#footer span:hover{
+    background:#eee;
+}
+/*²Ëµ¥ÑùÊ½*/
+#dish-list>li:hover{
+    background:#eee;
+    cursor: pointer;
+}
+
+/*detail*/
+.breadcrumb{
+    margin:0;
+}
+.detail-msg{
+    background:#eee;
+    border-radius: 5px;
+}

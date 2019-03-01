@@ -1,0 +1,47 @@
+<div ng-include="'tpl/header.html'"></div>
+
+<div class="container" style="margin-top: 70px">
+    <div class="alert alert-success">
+        <form action="">
+            <div class="form-group">
+                <label for="uname">收货人</label>
+                <input type="text" id="uname" class="form-control"/>
+            </div>
+            <div class="form-group">
+
+                <label > 性别：</label>
+                <br/>
+                 <div class="radio-inline">
+                        <label >
+                            <input type="radio" name="gender"/>先生
+                        </label>
+                 </div>
+                 <div class="radio-inline">
+                        <label >
+                            <input type="radio" name="gender"/>女生
+                        </label>
+                 </div>
+            </div>
+            <div class="form-group">
+                <label  for="uphone">联系电话：</label>
+                <input type="text" class="form-control" id="uphone"/>
+            </div>
+            <div class="form-group">
+                <label for="address">送餐地址：</label>
+                <br/>
+                <textarea name="address" id="address" class="form-control"></textarea>
+            </div>
+            <button class="btn btn-info btn-block" ng-click="jump('/myorder')">确定下单</button>
+        </form>
+    </div>
+
+
+    <div class="alert alert-success">
+        恭喜你！订单提成成功！id为：<span></span>
+    </div>
+    <div class="alert alert-danger">
+        抱歉！网络繁忙...
+    </div>
+</div>
+
+<div ng-include="'tpl/footer.html'"></div>
